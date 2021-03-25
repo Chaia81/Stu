@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <title>Delete Student</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Delete Student</h1>
+    <h2>Are you sure you want to delete this student?</h2>
+
+    <form th:action="@{/deleteStudent}" method="post">
+
+        <div class="form-group">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter student name">
+        </div>
+        <div class="form-group">
+            <label for="email"><b>Email:</b></label>
+            <input type="text"  class="form-control" id="email" name="email" placeholder="Enter student email">
+        </div>
+        <div class="form-group">
+            <label for="supervisor"><b>Supervisor:</b></label>
+            <input type="text" class="form-control" id="supervisor" name="supervisor" placeholder="Enter supervisor">
+        </div>
+    </form>
+</div>
+</body>
+</html>
